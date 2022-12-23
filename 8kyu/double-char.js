@@ -16,3 +16,6 @@ function doubleChar(str) {
     }
     return double
 }
+
+//Alternate Solution
+const doubleChar = str => str.split('').map(c => c+c).join('')
