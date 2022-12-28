@@ -4,6 +4,11 @@
 // Return your answer as a number.
 
 
+//Refactored solution
+function sumMix(x){
+  return x.map(a => +a).reduce((a,b) => a+b,0)
+}
+
 //My solution
 function sumMix(x) {
     let sum = 0
