@@ -17,4 +17,4 @@ function toNumberArray(stringarray) {
 }
 
 //Alternate solution
-const toNumberArray = stringarray => stringarray.map(element => Number(element))
+const toNumberArray = stringarray => stringarray.map(element => +element)
