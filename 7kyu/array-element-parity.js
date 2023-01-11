@@ -27,3 +27,6 @@ function solve(arr) {
     }
     return num[0]
 };
+
+//Alternate solution
+solve = arr => arr.find(element => !arr.includes(-element))
