@@ -29,3 +29,12 @@ function loopArr(arr, direction, steps) {
     }
     return arr
 }
+
+//Alternate solution
+function loopArr(arr, direction, steps) {
+    if(direction === 'right') {
+        return arr.splice(-steps).concat(arr)
+    } else {
+        return arr.splice(steps).concat(arr)
+    }
+}
