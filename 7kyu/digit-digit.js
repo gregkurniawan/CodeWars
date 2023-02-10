@@ -15,3 +15,9 @@ function squareDigits(num) {
     let sqr = arr.map(num => Math.pow(num, 2))
     return Number(sqr.map(String).reduce((a, b) => a + b))
 }
+
+//Alternate Solution
+const squareDigits = num =>
+    Number(num.toString()
+        .split('')
+        .map(item => Math.pow(item, 2)).join(''))
