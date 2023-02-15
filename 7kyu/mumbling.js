@@ -24,3 +24,14 @@ function accum(s) {
 
     return result
 }
+
+//Refactored code
+function accum(s) {
+    let arr = s.toLowerCase().split('')
+    return arr.map((letter, index) => letter.toUpperCase() + letter.repeat(index)).join('-')
+}
+
+// const accum = (s) => s.toLowerCase()
+//                       .split('')
+//                       .map((letter,index) => letter.toUpperCase() + letter.repeat(index))
+//                       .join('-')
