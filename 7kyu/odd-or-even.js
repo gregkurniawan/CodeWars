@@ -26,3 +26,6 @@ function oddOrEven(array) {
         return 'odd'
     }
 }
+
+//Refactor
+const oddOrEven = array => ((array.reduce((a, b) => a + b, 0)) % 2 === 0) ? 'even' : 'odd'
