@@ -13,3 +13,6 @@ const findDifference = (a, b) => {
     let vol2 = b.reduce((a, b) => a * b)
     return Math.max(vol1, vol2) - Math.min(vol1, vol2)
 }
+
+// Refactored code
+const findDifference = (a, b) => Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b))
