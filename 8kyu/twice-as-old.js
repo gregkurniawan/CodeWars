@@ -7,3 +7,6 @@
 
 //My solution
 const twiceAsOld = (dad, son) => (dad / son < 2) ? (son * 2) - dad : dad - (son * 2)
+
+//Refactored code
+const twiceAsOld = (dad, son) => Math.abs(dad - son * 2)
