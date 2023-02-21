@@ -8,4 +8,8 @@
 
 
 //My solution
-const findDifference = (a, b) => a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b)
+const findDifference = (a, b) => {
+    let vol1 = a.reduce((a, b) => a * b)
+    let vol2 = b.reduce((a, b) => a * b)
+    return Math.max(vol1, vol2) - Math.min(vol1, vol2)
+}
