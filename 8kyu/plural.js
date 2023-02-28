@@ -7,3 +7,6 @@
 
 //My solution
 const plural = n => n !== 1 ? true : false
+
+//Refactored
+const plural = n => n !== 1
