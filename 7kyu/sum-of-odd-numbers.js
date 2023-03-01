@@ -28,3 +28,6 @@ function rowSumOddNumbers(n) {
 
     return ans
 }
+
+// Refactored
+const rowSumOddNumbers = n => Math.pow(n, 3)
