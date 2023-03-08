@@ -17,8 +17,7 @@ function validatePIN(pin) {
     for (let i = 0; i < pin.length; i++) {
         if (pin[i] > '9' || pin[i] < '0') {
             return false
-        } else {
-            return true
         }
     }
+    return true
 }
