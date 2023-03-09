@@ -30,3 +30,21 @@ function solve(s) {
         return s.toUpperCase()
     }
 }
+
+
+//Refactor
+function solve(s) {
+    let lower = 0
+    let upper = 0
+    let arr = s.split('')
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == arr[i].toLowerCase()) {
+            lower++
+        } else {
+            upper++
+        }
+    }
+
+    return lower >= upper ? s.toLowerCase() : s.toUpperCase()
+}
