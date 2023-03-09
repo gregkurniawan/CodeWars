@@ -39,6 +39,6 @@
 
 //My solution
 function helloWorld() {
-    const str = 'Hello World'
+    const str = 'Hello World!'
     console.log(str)
 }
