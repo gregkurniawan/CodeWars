@@ -25,3 +25,16 @@ function vowelIndices(word) {
     return result
 
 }
+
+//Alternate solution
+function vowelIndices(word) {
+    let result = []
+
+    for (let i = 0; i < word.length; i++) {
+        if (/[aeiouy]/i.test(word[i])) {
+            result.push(i + 1)
+        }
+    }
+
+    return result
+}
