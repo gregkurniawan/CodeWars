@@ -23,3 +23,6 @@ function strCount(str, letter) {
     }
     return count
 }
+
+//Refactored
+const strCount = (str, letter) => str.split('').filter(item => item == letter).length
