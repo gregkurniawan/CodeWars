@@ -23,3 +23,6 @@ function gimme(t) {
         return 2
     }
 }
+
+//Refactored
+const gimme = t => t.indexOf([...t].sort((a, b) => a - b)[1])
