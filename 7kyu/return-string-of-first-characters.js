@@ -15,3 +15,6 @@ function makeString(s) {
 
     return result
 }
+
+//Refactored
+const makeString = s => s.split(' ').map(word => word[0]).join('')
