@@ -15,3 +15,7 @@
 
 //My solution
 const contamination = (text, char) => (!text.length || !char.length) ? '' : text.split('').fill(char).join('')
+
+
+//Refactored solution
+const contamination = (text, char) => char.repeat(text.length)
