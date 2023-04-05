@@ -31,3 +31,6 @@ function remainder(n, m) {
         return max % min
     }
 }
+
+//Refactored
+const remainder = (n, m) => n > m ? n % m : m % n
