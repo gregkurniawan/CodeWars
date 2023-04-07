@@ -12,3 +12,6 @@
 
 //My solution
 const first = (arr, n) => (n === 0) ? [] : (n === undefined) ? [arr[0]] : arr.slice(0, n)
+
+//Refactored
+const first = (arr, n) => arr.slice(0, n)
