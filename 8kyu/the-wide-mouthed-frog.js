@@ -9,3 +9,6 @@
 
 //My solution
 const mouthSize = animal => animal === 'alligator' || animal === 'ALLIGATOR' ? 'small' : 'wide'
+
+//Refactored
+const mouthSize = animal => animal.toLowerCase() == 'alligator' ? 'small' : 'wide'
