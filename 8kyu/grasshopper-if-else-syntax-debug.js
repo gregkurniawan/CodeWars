@@ -8,3 +8,6 @@
 
 //My solution
 const checkAlive = health => health <= 0 ? false : true
+
+//Refactored
+const checkAlive = health => health > 0
