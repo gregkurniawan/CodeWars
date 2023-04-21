@@ -12,3 +12,6 @@
 
 //My solution
 const xor = (a, b) => a == true && b == false || a == false && b == true
+
+//Alternate solution
+const xor = (a, b) => a != b
