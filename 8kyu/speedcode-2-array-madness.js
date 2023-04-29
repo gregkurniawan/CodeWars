@@ -15,3 +15,6 @@ function arrayMadness(a, b) {
 
     return squaredA.reduce((a, b) => a + b, 0) > squaredB.reduce((a, b) => a + b, 0)
 }
+
+//Alternate
+const arrayMadness = (a, b) => a.reduce((a, b) => a + b ** 2, 0) > b.reduce((a, b) => a + b ** 3, 0)
